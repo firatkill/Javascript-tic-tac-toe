@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(212, 219, 220);
+}
+.container {
+  margin-top: 5%;
+  width: 50%;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 15px;
+}
+.grid-item {
+  background-color: rgba(93, 133, 180);
+  border: 1px solid white;
+  padding-top: 40%;
+  padding-bottom: 40%;
+  font-size: 55px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+span {
+  position: absolute;
+  background-color: transparent;
+  color: white;
+  font-family: "Water Brush", cursive;
+
+  text-align: center;
+  justify-content: center;
+}
+.grid-item:hover {
+  box-shadow: 5px 5px 15px 15px white;
+  overflow: auto;
+  cursor: pointer;
+}
+.grid-item:active {
+  background-color: red;
+  animation-name: grow;
+  animation-duration: 0.3s;
+}
+@keyframes grow {
+  0% {
+    font-size: 55px;
+  }
+
+  50% {
+    font-size: 75px;
+  }
+  100% {
+    font-size: 55px;
+  }
+}
